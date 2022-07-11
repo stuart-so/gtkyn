@@ -16,6 +16,8 @@ export const userRouter = createRouter().mutation("register-user", {
           name,
         },
       });
+
+      return user;
     } catch (err) {
       if (err instanceof PrismaClientKnownRequestError) {
         if (err.code === "P2002") {
@@ -31,7 +33,5 @@ export const userRouter = createRouter().mutation("register-user", {
         });
       }
     }
-
-    return user;
   },
 });
