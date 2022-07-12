@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "@prisma/client": "^4.0.0",
@@ -27,6 +28,15 @@
     "zod": "^3.17.3"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/cookie": "^0.5.1",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/node": "18.0.0",
@@ -34,7 +44,9 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
+    "eslint-plugin-storybook": "^0.6.1",
     "prisma": "^4.0.0",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "webpack": "^5.73.0"
   }
 }
